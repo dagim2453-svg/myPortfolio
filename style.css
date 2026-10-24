@@ -4,11 +4,62 @@
   padding: 0;
 }
 body {
+  font-family: "poppins";
 }
 .nav {
   width: 100%;
-  background-color: #2c2b2b;
+  background-color: #02050f !important;
   font-family: "poppins";
+}
+.first-viewport {
+  color: white;
+  height: 80dvh;
+  background-image: url("/image.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+.first-viewport .hero-section {
+  display: flex;
+  padding: 1rem;
+  height: 50%;
+}
+.hero-section .hero-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.btns {
+  display: flex;
+  column-gap: 1rem;
+}
+.btns button {
+  margin-top: 0.5rem;
+  color: white;
+  background-color: transparent;
+  border: 1.7px solid rgb(8, 115, 255);
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  width: 150px;
+  padding: 0.7rem 1.3rem;
+  cursor: pointer;
+  transition: all ease;
+}
+.hero-description button:hover {
+  background-color: rgb(20, 78, 155);
+  border: transparent;
+}
+.img-section {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  width: 230px;
+  height: 230px;
+  border: 1px solid rgb(8, 115, 255);
+  border-radius: 50%;
+  background-image: url(/DAGIMBlack.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .nav ul {
   display: flex;
@@ -23,5 +74,5 @@ body {
   color: white;
 }
 .nav ul li:hover {
-  background-color: rgb(155, 73, 6);
+  background-color: rgb(19, 69, 134) !important;
 }
