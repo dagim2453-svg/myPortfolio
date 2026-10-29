@@ -11,6 +11,21 @@ body {
   background-color: #02050f !important;
   font-family: "poppins";
 }
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.nav ul li {
+  padding: 1rem;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+.nav ul li:hover {
+  background-color: rgb(19, 69, 134) !important;
+}
 .first-viewport {
   color: white;
   height: 80dvh;
@@ -55,24 +70,17 @@ body {
   margin-left: 3rem;
   width: 230px;
   height: 230px;
+
+  background-image: url(/DAGIMBlack.jpg);
   border: 1px solid rgb(8, 115, 255);
   border-radius: 50%;
-  background-image: url(/DAGIMBlack.jpg);
-  background-position: center;
+
+  /* background-image: url("./undraw_coding_joxb.svg"); */
+  background-position: 0 -30px;
   background-size: cover;
+  transition: all 0.1s ease-in-out;
 }
-.nav ul {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-}
-.nav ul li {
-  padding: 1rem;
-}
-.nav ul li a {
-  text-decoration: none;
-  color: white;
-}
-.nav ul li:hover {
-  background-color: rgb(19, 69, 134) !important;
+.img-section:hover {
+  filter: drop-shadow(-4px -4px 5px rgb(8, 115, 255))
+    drop-shadow(4px 4px 6px rgb(8, 115, 255));
 }
