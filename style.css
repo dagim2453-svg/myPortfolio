@@ -78,9 +78,27 @@ body {
   /* background-image: url("./undraw_coding_joxb.svg"); */
   background-position: 0 -30px;
   background-size: cover;
-  transition: all 0.1s ease-in-out;
+  transition:
+    transform 0s ease,
+    filter 0.2s ease;
 }
 .img-section:hover {
   filter: drop-shadow(-4px -4px 5px rgb(8, 115, 255))
     drop-shadow(4px 4px 6px rgb(8, 115, 255));
+
+  animation: spin 20s infinite linear;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(80deg);
+  }
+  75% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
