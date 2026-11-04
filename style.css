@@ -103,3 +103,31 @@ body {
     transform: rotate(0deg);
   }
 }
+.second-viewport {
+  min-height: 70dvh;
+  padding: 20px;
+  color: white;
+  background-color: #03102b;
+}
+.second-viewport h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.second-viewport .about-img-section {
+  margin-inline: auto;
+  width: 270px;
+  height: 270px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-block: 3rem;
+  border: 3px solid transparent;
+}
+.second-viewport .about-img-section:hover {
+  border: 3px solid rgb(1, 111, 255);
+}
+
+.second-viewport .about-img-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
