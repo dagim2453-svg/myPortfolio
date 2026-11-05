@@ -8,8 +8,13 @@ body {
 }
 .nav {
   width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
   background-color: #02050f !important;
   font-family: "poppins";
+  overflow: hidden;
 }
 .nav ul {
   display: flex;
@@ -27,6 +32,7 @@ body {
   background-color: rgb(19, 69, 134) !important;
 }
 .first-viewport {
+  margin-top: 50px;
   color: white;
   height: 80dvh;
   background-image: url("/image.jpg");
