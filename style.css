@@ -74,12 +74,11 @@ body {
 .img-section {
   margin-top: 2rem;
   margin-left: 3rem;
-  width: 230px;
-  height: 230px;
+  width: clamp(200px, 25vw, 250px);
+  height: clamp(200px, 25vw, 250px);
 
   background-image: url(/DAGIMBlack.jpg);
   border: 1px solid rgb(8, 115, 255);
-  border-radius: 50%;
 
   /* background-image: url("./undraw_coding_joxb.svg"); */
   background-position: 0 -30px;
@@ -87,26 +86,17 @@ body {
   transition:
     transform 0s ease,
     filter 0.2s ease;
-}
-.img-section:hover {
+  animation: spin 15s infinite alternate-reverse ease-in-out;
   filter: drop-shadow(-4px -4px 5px rgb(8, 115, 255))
     drop-shadow(4px 4px 6px rgb(8, 115, 255));
-
-  animation: spin 20s infinite linear;
 }
 
 @keyframes spin {
   0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(80deg);
-  }
-  75% {
-    transform: rotate(25deg);
+    transform: rotate(-25deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(25deg);
   }
 }
 .second-viewport {
