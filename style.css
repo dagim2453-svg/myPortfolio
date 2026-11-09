@@ -34,11 +34,12 @@ body {
 .first-viewport {
   margin-top: 50px;
   color: white;
-  height: 80dvh;
+  min-height: 80dvh;
   background-image: url("/image.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
+  overflow: hidden;
 }
 .first-viewport .hero-section {
   display: flex;
@@ -104,10 +105,22 @@ body {
   padding: 20px;
   color: white;
   background-color: #04090f;
+  border-top: 1px solid #1e293b;
 }
 .second-viewport h2 {
   text-align: center;
   margin-bottom: 1rem;
+}
+.second-viewport .about-contents {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+  max-width: 1100px;
+  width: 100%;
+}
+.second-viewport .about-contents p {
+  color: #cbd5e1;
 }
 .second-viewport .about-img-section {
   margin-inline: auto;
