@@ -35,7 +35,7 @@ body {
   margin-top: 50px;
   color: white;
   min-height: 80dvh;
-  background-image: url("/image.jpg");
+  background-image: url("/images/image.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -78,7 +78,7 @@ body {
   width: clamp(200px, 25vw, 250px);
   height: clamp(200px, 25vw, 250px);
 
-  background-image: url(/DAGIMBlack.jpg);
+  background-image: url(/images/DAGIMBlack.jpg);
   border: 1px solid rgb(8, 115, 255);
 
   /* background-image: url("./undraw_coding_joxb.svg"); */
@@ -139,4 +139,59 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.skills-section {
+  min-height: 70dvh;
+  padding: 20px;
+  color: white;
+  background-color: #08111d;
+  border-top: 1px solid #1e293b;
+}
+.skills-section h2 {
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.3rem;
+}
+.skills-list .skill {
+  position: relative;
+  width: 250px;
+  height: 250px;
+
+  border: 2px solid #1e4e8d62;
+  flex: 1 1 auto;
+  border-radius: 5px;
+  display: flex;
+  align-items: end;
+  position: relative;
+  overflow: hidden;
+}
+.skill .contents {
+  padding: 1rem;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.skill .contents p {
+  color: rgba(255, 255, 255, 0.7);
+}
+.skill img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.skill:hover {
+  border-color: #016fff;
 }
