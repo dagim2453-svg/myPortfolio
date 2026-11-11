@@ -183,9 +183,24 @@ body {
   z-index: 20;
   background-color: rgba(0, 0, 0, 0.6);
 }
-.skill .contents p {
-  color: rgba(255, 255, 255, 0.7);
+.skill .contents h3 {
+  color: rgba(255, 255, 255, 0.85);
 }
+.skill .contents .stacks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.stacks div {
+  padding: 0.1rem 0.7rem;
+  background-color: rgba(131, 156, 63, 0.3);
+  cursor: pointer;
+  border-radius: 7px;
+}
+.stacks div:hover {
+  background-color: rgba(131, 156, 63, 0.7);
+}
+
 .skill img {
   position: absolute;
   width: 100%;
