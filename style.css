@@ -140,23 +140,27 @@ body {
   height: 100%;
   object-fit: cover;
 }
-.skills-section {
+.skills-section,
+.projects-section {
   min-height: 70dvh;
   padding: 20px;
   color: white;
   background-color: #08111d;
-  border-top: 1px solid #1e293b;
+  border-top: 1px solid #151e2c;
 }
-.skills-section h2 {
+.skills-section h3,
+.projects-section h3 {
   text-align: center;
   margin-bottom: 1.2rem;
 }
-.skills-list {
+.skills-list,
+.projects-list {
   display: flex;
   flex-wrap: wrap;
   gap: 1.3rem;
 }
-.skills-list .skill {
+.skills-list .skill,
+.projects-card {
   position: relative;
   width: 250px;
   height: 250px;
@@ -169,7 +173,8 @@ body {
   position: relative;
   overflow: hidden;
 }
-.skill .contents {
+.skill .contents,
+.projects-card .contents {
   padding: 1rem;
   z-index: 100;
   position: absolute;
@@ -183,30 +188,36 @@ body {
   z-index: 20;
   background-color: rgba(0, 0, 0, 0.6);
 }
-.skill .contents h3 {
+.skill .contents h3,
+.projects-card .contents h3 {
   color: rgba(255, 255, 255, 0.85);
 }
-.skill .contents .stacks {
+.skill .contents .stacks,
+.languages-used {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-.stacks div {
+.stacks div,
+.languages-used div {
   padding: 0.1rem 0.7rem;
   background-color: rgba(131, 156, 63, 0.3);
   cursor: pointer;
   border-radius: 7px;
 }
-.stacks div:hover {
+.stacks div:hover,
+.languages-used div:hover {
   background-color: rgba(131, 156, 63, 0.7);
 }
 
-.skill img {
+.skill img,
+.projects-card img {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.skill:hover {
+.skill:hover,
+.projects-card:hover {
   border-color: #016fff;
 }
