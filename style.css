@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-snap-align: start;
+}
 body {
   font-family: "poppins";
 }
@@ -223,7 +227,7 @@ body {
 }
 
 .footer {
-  background-color: #0b0f19 !important;
+  background-color: #0b0f19;
   color: #94a3b8;
   padding: 4rem 2rem 2rem;
   border-top: 1px solid #1e293b;
