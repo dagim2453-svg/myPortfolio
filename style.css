@@ -301,3 +301,15 @@ body {
   text-align: center;
   font-size: 0.85rem;
 }
+@media(max-width:400px){ 
+
+  .hero-section {
+
+    flex-direction:column;
+   }
+   .about-contents { 
+      grid-template-columns:1fr;
+ }
+
+
+ }
