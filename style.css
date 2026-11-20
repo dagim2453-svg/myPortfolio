@@ -305,10 +305,13 @@ body {
 
   .hero-section {
 
-    flex-direction:column;
+    flex-direction:column-reverse;
+    gap:1.3rem;
    }
    .about-contents { 
-      grid-template-columns:1fr;
+      display:flex;
+      flex-direcion:column;
+      gap:1.3rem;
  }
 
 
