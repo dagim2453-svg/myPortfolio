@@ -313,6 +313,11 @@ body {
       flex-direcion:column !important;
       gap:1.3rem;
  }
+ .about-img-section{
+    width:280px;
+    height:280px;
+
+}
 
 
  }
