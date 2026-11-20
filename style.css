@@ -308,9 +308,9 @@ body {
     flex-direction:column-reverse;
     gap:1.3rem;
    }
-   .about-contents { 
-      display:flex;
-      flex-direcion:column;
+   .second-viewport .about-contents { 
+      display:flex !important ;
+      flex-direcion:column !important;
       gap:1.3rem;
  }
 
